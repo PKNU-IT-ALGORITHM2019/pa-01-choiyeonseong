@@ -4,6 +4,8 @@ int size() {	//배열의 크기, 단어의 개수 출력
 	return sizeof(list);
 }
 
+
+
 void read() {	//사전 배열에 저장
 	int i = 0;	//dict 배열
 	int j = 0;	//글자수
@@ -93,7 +95,8 @@ void find() {
 	scanf("%s", buf);
 
 	while (found[item] > length) {
-		found[item] = binarySearch(list, buf, found[item++], length);
+		found[item++] = binarySearch(list, buf, found[item], length);
+
 	}
 
 	if (item > 0) {
@@ -104,6 +107,8 @@ void find() {
 	else print_notfound(found[item]);
 
 }
+
+
 
 	int main(void) {
 
@@ -122,11 +127,11 @@ void find() {
 				int i = size();
 				printf("%d\n",&i);
 			}
-			else if (strcmp(command, "find"))
+			else if (strcmp(command, "find")==0)
 			{
 				find();
 			}
-			else if (strcmp(command, "exit"))
+			else if (strcmp(command, "exit")==0)
 				break;
 
 		}

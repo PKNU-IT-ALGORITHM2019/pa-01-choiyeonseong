@@ -14,6 +14,7 @@ int binarySearch(struct voca data[], char target[], int begin, int end);
 void find();
 
 
+
 struct voca {					//구조체로 묶기
 	char word[LENGTH];
 	char speech[LENGTH];
