@@ -110,6 +110,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="190314.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dictionary.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\dict.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
